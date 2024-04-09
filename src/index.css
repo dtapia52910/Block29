@@ -1,0 +1,100 @@
+
+.player-card {
+  min-width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-color: #4d4d4d; 
+  border: 3px solid #f5e8c7; 
+  border-radius: 10px; 
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+.player-card:hover {
+  transform: translateY(-5px); 
+}
+
+
+.player-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%; 
+}
+
+
+.player-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: 12px;
+  border-radius: 10px; 
+}
+
+
+.player-details {
+  position: relative;
+  height: 224px;
+  width: 100%;
+  background-color: #5c5c5c; 
+  transition: opacity 0.2s ease;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 10px 10px; 
+}
+
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white overlay */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+
+.player-card:hover .overlay {
+  opacity: 1;
+}
+
+
+.player {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add-puppy {
+  background-color: #818fb4; 
+  border: 3px solid #f5e8c7; 
+  border-radius: 10px; 
+  margin: 0 24px;
+  transition: transform 0.3s ease;
+}
+
+.add-puppy:hover {
+  transform: scale(1.05); 
+}
+
+
+form {
+  display: grid;
+  align-items: baseline;
+  justify-content: center;
+  justify-items: start;
+}
+
+label {
+  margin: 6px 0;
+}
+
+input,
+select {
+  margin: 0 6px;
+}
